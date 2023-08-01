@@ -294,7 +294,7 @@ abstract class CRM_Sqltasks_Action {
         }
         $actions[] = [
           'type'                => $className,
-          'default_order'       => $className::getDefaultOrder(),
+          'default_order'       => $className->getDefaultOrder(),
           'is_default_template' => $className::isDefaultTemplateAction()
         ];
       }
